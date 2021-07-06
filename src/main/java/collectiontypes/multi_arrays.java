@@ -4,8 +4,9 @@ public class multi_arrays {
 
 	public static void main(String[] args) {
 		int i;
-		int j;
+		int j=0;
 		int k;
+		int coulumnno;
 		// TODO Auto-generated method stub
         int a[][]= new int[2][3];// 2 is rows and 3 column
         a[0][0]=56;
@@ -33,7 +34,8 @@ public class multi_arrays {
         	
         		}else 
         		{
-        			k=a[i][j];		
+        			k=a[i][j];	
+        			
         		}
         	}
        
@@ -41,7 +43,7 @@ public class multi_arrays {
         System.out.println(k);
         
 //find out he minimum number and then find the maximum number in the column in which
-        //minimum numbe ris situated
+        //minimum number is situated
         int b[][] = {{20,21,22}, {51,52,53},{17,18,19}};
         	//20 21 22
 	        //51 52 53
@@ -57,20 +59,21 @@ public class multi_arrays {
           	
           		}else 
           		{
-          			k=b[i][j];		
+          			k=b[i][j];	
+          			coulumnno=j;
           		}
           	}
           	
           }
-          
+       /*  
           
           for( i=0;i<2;i++) {
-        	  if(k>b[i][j]) 
+        	  if(k>b[i][coulumnno]) 
         	  {
-        		   k=b[i][jm];
+        		   k=b[i][coulumnno];
         	  }
         	  
-          }
+          }*/
 	System.out.println(k);
 	}
 
